@@ -1,9 +1,4 @@
 on rightclick holding a diamond sword:
-    push the player upwards at speed 1
-    push the player backwards at speed 5
+    push the player upwards at force 1
+    push the player backwards at force 5
     shoot an arrow at speed 5
-
-on damage:
-    cancel event
-    push the victim backwards at speed 1
-    push the victim upwards at speed 0.5
