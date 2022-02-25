@@ -9,9 +9,9 @@ on right click with green dye:
         if {cooltime.%player%} is 0:
             cooltime(player,1)
             player is on ground:
-            broadcast "空中"
-            push the player upwards at force {backstep-power}/3
-            push the player backwards at force {backstep-power}
+                broadcast "空中"
+                push the player upwards at force {backstep-power}/3
+                push the player backwards at force {backstep-power}
 
 
 on damage of a player:
