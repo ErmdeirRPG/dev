@@ -12,5 +12,5 @@ on right click with green dye:
             push the player backwards at force {backstep-power}
 
 on damage:
-    if damage cause is "fall":
+    damage cause is fall:
         cancel event
