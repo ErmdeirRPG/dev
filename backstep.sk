@@ -10,8 +10,8 @@ on right click with green dye:
             cooltime(player,1)
             push the player upwards at force {backstep-power}/3
             push the player backwards at force {backstep-power}
-            # player is not on ground
-            # broadcast "空中"
+            if player is not on ground:
+                broadcast "空中"
 
 on damage of a player:
         damage was caused by fall
