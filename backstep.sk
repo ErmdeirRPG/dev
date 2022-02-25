@@ -4,7 +4,7 @@ command /backstep [<number>]:
             set {backstep-power} to arg-1
         else:
             message "&1&l現在のバックステップ値は&6&l%{backstep-power}%&1&lです" to player
-on right click with feather:
+on right click with cactus green:
     if name of event-item is "バックステップ":
         if {cooltime.%player%} is 0:
             cooltime(player,1)
