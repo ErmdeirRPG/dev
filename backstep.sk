@@ -15,5 +15,6 @@ on damage of a player:
         damage was caused by fall
         cancel event
 
-player is not on ground:
+loop:
+    player is not on ground
     broadcast "空中"
