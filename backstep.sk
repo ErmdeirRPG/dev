@@ -6,7 +6,7 @@ command /backstep [<number>]:
             message "&1&l現在のバックステップ値は&6&l%{backstep-power}%&1&lです" to player
 on right click with green dye:
     if name of event-item is "バックステップ":
-        if {cooltime.%player%} is 0:
-            cooltime(player,1)
+        # if {cooltime.%player%} is 0:
+            # cooltime(player,1)
             push the player upwards at force {backstep-power}/3
             push the player backwards at force {backstep-power}
