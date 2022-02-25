@@ -8,11 +8,13 @@ on right click with green dye:
     if name of event-item is "バックステップ":
         if {cooltime.%player%} is 0:
             cooltime(player,1)
+            player is on ground:
+            broadcast "空中"
             push the player upwards at force {backstep-power}/3
             push the player backwards at force {backstep-power}
-            if player is not on ground:
-                broadcast "空中"
+
 
 on damage of a player:
         damage was caused by fall
         cancel event
+
