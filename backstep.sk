@@ -7,7 +7,7 @@ command /backstep [<number>]:
 on right click with green dye:
     if name of event-item is "バックステップ":
         if {cooltime.%player%} is 0:
-            cancel event
             cooltime(player,1)
             push the player upwards at force {backstep-power}/3
             push the player backwards at force {backstep-power}
+            cancel event
