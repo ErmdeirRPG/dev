@@ -11,5 +11,5 @@ on right click with green dye:
             push the player upwards at force {backstep-power}/3
             push the player backwards at force {backstep-power}
 
-on damage of fall:
+on damage:
         broadcast "落下"
