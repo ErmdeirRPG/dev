@@ -6,5 +6,5 @@ command /knockback [<number>]:
             message "&1&l現在のノックバック値は&6&l%{knockback-power}%&1&lです" to player
 on right click with iron sword:
     if name of event-item is "ソードバッシュ":
-        push targeted entity backwards at speed {knockback-power}
+        push entity direction from player to entity at speed {knockback-power}
         push targeted entity upwards at speed {knockback-power}/2
