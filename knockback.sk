@@ -4,7 +4,7 @@ command /knockback [<number>]:
             set {knockback-power} to arg-1
         else:
             message "&1&l現在のノックバック値は&6&l%{knockback-power}%&1&lです" to player
-on damage:
-    cancel event
-    push the victim backwards at speed {knockback-power}
-    push the victim upwards at speed {knockback-power}/2
+on right click with iron sword:
+    if name of event-item is "ソードバッシュ":
+        push entity direction from player to entity at speed {knockback-power}
+        push victim upwards at speed {knockback-power}/2
