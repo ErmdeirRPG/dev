@@ -12,6 +12,8 @@ on right click with green dye:
             push the player backwards at force {backstep-power}
 
 on damage of a player:
-    if ground state of player is false:
         damage was caused by fall
         cancel event
+
+player is not on ground:
+    broadcast "空中"
