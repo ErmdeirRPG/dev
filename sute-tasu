@@ -1,0 +1,8 @@
+command /status
+ trigger
+  set {hp%player%} to {level%player%}*10+{vit%player%}*5
+  set {str%player%} to {level%player%}*2+{str%player%}
+  set {estr%player%} to {level%player%}*2+{elm%player%}
+  set {heal%player%} to {level%player%}*4+{mhy%player%}
+  set {speed%player%} to {level%player%}+{agi%player%}*0.3
+  set {critical%player%} to {level%player%}+{agi%player%}
