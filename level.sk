@@ -16,5 +16,7 @@ command /5:
   trigger:
     keikenti(player,5)
 on death of zombie:
+ send "kill" to attacer
  set {_p} to attacer's uuid
+ send "zombie" to {_p}
  keikenti({_p},5)
