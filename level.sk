@@ -15,8 +15,9 @@ command /level:
 command /5:
   trigger:
     keikenti(player,5)
-on death of zombie:
+on death:
  if attacker is player:
-  set {_p} to attaker's uuid
-  send "zombie" to {_p}
-  keikenti({_p},5)
+  if victim is zombie:
+   set {_p} to attaker's uuid
+   send "zombie" to {_p}
+   keikenti({_p},5)
