@@ -18,7 +18,7 @@ command /5:
 on death of zombie:
  set {_p} to attacer's uuid
  keikenti({_p},5)
-command /+:
+command /tasu:
  trigger:
   add {+%player%} to 1
   send "%{+%player%}%" to player
