@@ -2,7 +2,7 @@ function keikenti(p:player,e:number):
  remove {_e} from {needexp%{_p}%}
  if {needexp%{_p}%}<0:
   if {level%{_p}%} is 100:
-   cancel event
+   send "レベルは最大です" to {_p}
   else:
    add 1 to {level%{_p}%}
    send player title "level up" with subtitle "level{level%{player}%}" for 3 seconds
