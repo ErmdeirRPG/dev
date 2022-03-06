@@ -5,7 +5,7 @@ function keikenti(p:player,e:number):
    send "レベルは最大です" to {_p}
   else:
    add 1 to {level%{_p}%}
-   send player title "level up" with subtitle "level{level%{player}%}" for 3 seconds
+   send title "level up" with subtitle "level{level%{player}%}" to {_p} for 3 seconds
    add 1.1^{level%{_p}%}+{level%{_p}%}*10 to {level%{_p}%}
 on first join:
  set {level%player%} to 1
