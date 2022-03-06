@@ -1,7 +1,7 @@
-function exp{p:player,e:number}
+function exp{p:player,e:number}:
 remove {_e} from {needexp%player%}
 if {needexp%{_p}%}<0:
- if {level%{_p}%} is 100
+ if {level%{_p}%} is 100:
   cancel event
  else:
   add 1 to {level%{_p}%}
@@ -10,4 +10,9 @@ if {needexp%{_p}%}<0:
 on first join:
  set {level%player%} to 1
  set {needexp%player%} to 10
+command /level:
+ trigger:
+  set {level%player%} to 1
+  set {needexp%player%} to 10
+
  
