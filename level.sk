@@ -1,6 +1,6 @@
 function keikenti(p:player,e:number):
  remove {_e} from {needexp%{_p}%}
- if {needexp%{_p}%}<0:
+ if {needexp%{_p}%}<1:
   if {level%{_p}%} is 100:
    send "レベルは最大です" to {_p}
   else:
