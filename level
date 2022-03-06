@@ -1,0 +1,12 @@
+function exp{p:player,e:number}
+remove {_e} from {needexp%player%}
+if {needexp%{_p}%}<0:
+ if {level%{_p}%} is 100
+  cancel event
+ else:
+  add 1 to {level%{_p}%}
+  send player title "level up" with subtitle "level{level%{player}%}" for 5 seconds
+  add 1.1^{level%{_p}%}+{level%{_p}%}*10 to {level%{_p}%}
+on first join:
+ set {level%player%} to 1
+ set {needexp%player%} to 10
