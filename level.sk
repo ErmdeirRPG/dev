@@ -20,5 +20,5 @@ on death of zombie:
  keikenti({_p},5)
 command /+:
   trigger:
-   add {+%player%} to 1
+  add {+%player%} to 1
   send "%{+%player%}%" to player
