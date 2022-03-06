@@ -17,7 +17,6 @@ command /5:
     keikenti(player,5)
 on death of zombie:
  if attacker is player:
-  send "kill" to attacer
   set {_p} to attaker's uuid
   send "zombie" to {_p}
   keikenti({_p},5)
