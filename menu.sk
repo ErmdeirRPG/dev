@@ -19,5 +19,5 @@ on inventory click:
   set slot 2 of player's current inventory to Golden Sword named "sukiru%{sukiru.%player%}%" with lore "セット中 %{sukiru.%player%::*}%"
 command /tasu:
  trigger:
-  add {tasu%player%} to 1
+  add 1 to {tasu%player%}
   send "%{tasu%player%}%desune" to player
