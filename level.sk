@@ -14,6 +14,9 @@ command /level:
  trigger:
   set {level%player%} to 1
   set {needexp%player%} to 10
+command /5:
+  trigger:
+    keikenti(player,5)
 on death of zombie:
  set {_p} to attacer's uuid
  send "5の経験値を得た" to {_p}
