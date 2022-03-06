@@ -17,4 +17,5 @@ command /level:
 on death of zombie:
  if attacer is player:
   set {_p} to attacer's uuid
+  send "5の経験値を得た" to {_p}
   function({_p},5)
