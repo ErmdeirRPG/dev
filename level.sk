@@ -21,4 +21,4 @@ on death of zombie:
 command /tasu:
  trigger:
   add {+%player%} to 1
-  send "%{+%player%}%" to player
+  send "%{+%player%}%desu" to player
