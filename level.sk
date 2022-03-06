@@ -1,5 +1,5 @@
 function keikenti(p:player,e:number):
- remove {_e} from {needexp%player%}
+ remove {_e} from {needexp%{_p}%}
  if {needexp%{_p}%}<0:
   if {level%{_p}%} is 100:
    cancel event
