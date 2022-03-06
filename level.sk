@@ -1,4 +1,5 @@
 function keikenti(p:player,e:number):
+ send "%{_e}%の経験値を得た" to {_p}
  remove {_e} from {needexp%{_p}%}
  if {needexp%{_p}%}<1:
   add 1 to {level%{_p}%}
@@ -16,5 +17,4 @@ command /5:
     keikenti(player,5)
 on death of zombie:
  set {_p} to attacer's uuid
- send "5の経験値を得た" to {_p}
  keikenti({_p},5)
