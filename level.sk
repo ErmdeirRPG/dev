@@ -14,3 +14,6 @@ command /level:
  trigger:
   set {level%player%} to 1
   set {needexp%player%} to 10
+on death of zombie:
+ if attacer is player:
+  function(attacer,5)
