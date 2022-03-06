@@ -17,4 +17,4 @@ command /level:
 on death of zombie:
  if attacer is player:
   set {_p} to attacer's uuid
-  function(attacer,5)
+  function({_p},5)
