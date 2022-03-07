@@ -6,3 +6,4 @@ command /status:
   set {heal%player%} to {level%player%}*4+{mhy%player%}
   set {speed%player%} to {level%player%}+{agi%player%}*0.3
   set {critical%player%} to {level%player%}+{agi%player%}
+  set {mps%player%} to {level%player%}*200

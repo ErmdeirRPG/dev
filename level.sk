@@ -3,6 +3,7 @@ function keikenti(p:player,e:number):
  remove {_e} from {needexp%{_p}%}
  if {needexp%{_p}%}<1:
   add 1 to {level%{_p}%}
+  add 5 to {ste-tasu%{p}%}
   send title "level up" with subtitle "level%{level%{_p}%}%" to {_p} for 3 seconds
   add {level%{_p}%}*10 to {needexp%{_p}%}
 on first join:
