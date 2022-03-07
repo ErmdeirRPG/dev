@@ -3,12 +3,20 @@ function keikenti(p:player,e:number):
  remove {_e} from {needexp%{_p}%}
  if {needexp%{_p}%}<1:
   add 1 to {level%{_p}%}
-  add 5 to {sute-tasu%{p}%}
+  add 5 to {sute-tasu%{_p}%}
   send title "level up" with subtitle "level%{level%{_p}%}%" to {_p} for 3 seconds
   add {level%{_p}%}*10 to {needexp%{_p}%}
 on first join:
  set {level%player%} to 1
  set {needexp%player%} to 10
+ set {hp%player%} to 1
+ set {str%player%} to 1
+ set {estr%player%} to 1
+ set {heal%player%} to 1
+ set {speed%player%} to 1
+ set {critical%player%} to 1
+ set {mps%player%} to 1
+ set {sute-tasu%player%} to 0
 command /level:
  trigger:
   set {level%player%} to 1
