@@ -20,7 +20,7 @@ command /level:
  trigger:
   set {level%player%} to 1
   set {needexp%player%} to 10
-  set {hp%player%} to 1
+  set {hp%player%} to 20
   set {vit%player%} to 1
   set {str%player%} to 1
   set {elm%player%} to 1
