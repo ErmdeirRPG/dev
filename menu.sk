@@ -1,7 +1,7 @@
 on rightclick holding sunflower:
  open chest inventory with 1 row named "meinmenu" to player
  set slot 0 of player's current inventory to Bottle o' Enchanting named "level %{level%player%}%" with lore "next level %{needexp%player%}%"
- set slot 1 of player's current inventory to Diamond Sword named "status" with lore "HP%hp%player%}%" and "MP%{mp%player%}% MP%{mps%player%}%/5秒"
+ set slot 1 of player's current inventory to Diamond Sword named "status" with lore "HP%{hp%player%}%" and "MP%{mp%player%}% MP%{mps%player%}%/5秒"
  set slot 2 of player's current inventory to Golden Sword named "sukiru%{sukiru.%player%}%" with lore "セット中 %{sukiru.%player%::*}%"
  
 
