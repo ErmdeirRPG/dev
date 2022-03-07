@@ -20,6 +20,7 @@ command /level:
   set {speed%player%} to 1
   set {critical%player%} to 1
   set {mps%player%} to 1
+  set {sute-tasu%player%} to 0
 command /5:
   trigger:
     keikenti(player,5)
