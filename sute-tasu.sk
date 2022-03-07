@@ -7,7 +7,7 @@ command /status:
   set {speed%player%} to {level%player%}+{agi%player%}*0.3
   set {critical%player%} to {level%player%}+{agi%player%}
   set {mps%player%} to {level%player%}*2
-every tick in "world":
+every tick:
  loop all player:
   set {hp%loop-player%} to {level%loop-player%}*10+{vit%loop-player%}*5
   set {str%loop-player%} to {level%loop-player%}*2+{str%loop-player%}
