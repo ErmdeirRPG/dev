@@ -13,6 +13,13 @@ command /level:
  trigger:
   set {level%player%} to 1
   set {needexp%player%} to 10
+  set {hp%player%} to 1
+  set {str%player%} to 1
+  set {estr%player%} to 1
+  set {heal%player%} to 1
+  set {speed%player%} to 1
+  set {critical%player%} to 1
+  set {mps%player%} to 1
 command /5:
   trigger:
     keikenti(player,5)
