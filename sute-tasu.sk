@@ -8,10 +8,11 @@ command /status:
   set {critical%player%} to {level%player%}+{agi%player%}
   set {mps%player%} to {level%player%}*2
 every tick in "world":
-  set {hp%player%} to {level%player%}*10+{vit%player%}*5
-  set {str%player%} to {level%player%}*2+{str%player%}
-  set {estr%player%} to {level%player%}*2+{elm%player%}
-  set {heal%player%} to {level%player%}*4+{mhy%player%}
-  set {speed%player%} to {level%player%}+{agi%player%}*0.3
-  set {critical%player%} to {level%player%}+{agi%player%}
-  set {mps%player%} to {level%player%}*2
+ loop all player:
+  set {hp%loop-player%} to {level%loop-player%}*10+{vit%loop-player%}*5
+  set {str%loop-player%} to {level%loop-player%}*2+{str%loop-player%}
+  set {estr%loop-player%} to {level%loop-player%}*2+{elm%loop-player%}
+  set {heal%loop-player%} to {level%loop-player%}*4+{mhy%loop-player%}
+  set {speed%loop-player%} to {level%loop-player%}+{agi%loop-player%}*0.3
+  set {critical%loop-player%} to {level%loop-player%}+{agi%loop-player%}
+  set {mps%loop-player%} to {level%loop-player%}*2
