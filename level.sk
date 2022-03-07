@@ -13,8 +13,7 @@ on first join:
  set {str%player%} to 1
  set {estr%player%} to 1
  set {heal%player%} to 1
- set {speed%player%} to 1
- set {critical%player%} to 1
+ set {agi%player%} to 1
  set {mps%player%} to 1
  set {sute-tasu%player%} to 0
 command /level:
@@ -22,11 +21,12 @@ command /level:
   set {level%player%} to 1
   set {needexp%player%} to 10
   set {hp%player%} to 1
+  set {vit%player%} to 1
   set {str%player%} to 1
-  set {estr%player%} to 1
-  set {heal%player%} to 1
-  set {speed%player%} to 1
-  set {critical%player%} to 1
+  set {elm%player%} to 1
+  set {def%player%} to 1
+  set {mhy%player%} to 1
+  set {agi%player%} to 1
   set {mps%player%} to 1
   set {sute-tasu%player%} to 0
 command /5:
