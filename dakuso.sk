@@ -2,6 +2,7 @@ on rightclick with stick:
  if event-block is ork leaves:
   teleport the player to {hisuisyou}
   send title "翡翠晶の森" with subtitle "level%{level%{_p}%}%" to {_p} for 3 seconds
-command /dakuso:
- trigger:
+on leftclick with stick:
+ if event-block is ork leaves:
   set {hisui%player%} to location of player
+  send "set point" to player
