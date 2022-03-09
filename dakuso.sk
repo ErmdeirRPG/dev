@@ -5,6 +5,6 @@ on teleport:
 on rightclick with stick:
  if event-block is ork leaves:
   teleport the player to {hisuisyou}
-command /hisuisyou:
+command /tp:
  trigger:
   set {hisuisyou} to location of player
