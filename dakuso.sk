@@ -6,4 +6,4 @@ on rightclick with stick:
   teleport the player to {hisuisyou}
 command /hisui:
  trigger:
-  set {hisuisyou} to location of player
+  set {hisui} to location of player
