@@ -1,6 +1,6 @@
 on rightclick holding a stick:
   teleport the player to {hisui}
-  send title "翡翠晶の森" with subtitle "level%{level%{_p}%}%" to {_p} for 3 seconds
+  send title "翡翠晶の森" with subtitle "level%{level%{_p}%}%" to player for 3 seconds
 on leftclick holding a stick:
   set {hisui} to location of player
   send "set point" to player
