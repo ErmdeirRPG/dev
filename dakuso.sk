@@ -1,10 +1,9 @@
 on teleport:
  event-location is {hisuisyou}
  send title "翡翠晶の森" with subtitle "level%{level%{_p}%}%" to {_p} for 3 seconds
-
 on rightclick with stick:
  if event-block is ork leaves:
   teleport the player to {hisuisyou}
-command /tp:
+command /telepo:
  trigger:
   set {hisuisyou} to location of player
