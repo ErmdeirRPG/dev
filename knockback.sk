@@ -7,8 +7,8 @@ command /knockback [<number>]:
 on right click with iron sword:
     if name of event-item is "ソードバッシュ":
         if {cooltime.%player%} is 0:
-            cooltime(player,5)
-            damage targeted entity by 2.5 heart
+            cooltime(player,3)
+            damage targeted entity by 5 heart
             push entity direction from player to entity at speed {knockback-power}
             push targeted entity upwards at speed {knockback-power}/2
             apply potion of slowness of tier 3 to targeted entity for 5 seconds
