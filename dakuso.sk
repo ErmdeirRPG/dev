@@ -1,8 +1,8 @@
-on rightclick with stick:
+on rightclick holding a stick:
  if event-block is ork leaves:
-  teleport the player to {hisuisyou}
+  teleport the player to {hisui}
   send title "翡翠晶の森" with subtitle "level%{level%{_p}%}%" to {_p} for 3 seconds
-on leftclick with stick:
+on leftclick holding a stick:
  if event-block is ork leaves:
   set {hisui%player%} to location of player
   send "set point" to player
