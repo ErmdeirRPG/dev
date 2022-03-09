@@ -1,7 +1,7 @@
 on rightclick holding a stick:
-  teleport the player to {hisui}
   apply potion of blindness 3 without particles to player for 3 seconds
   wait 2.5 seconds
+  teleport the player to {hisui}
   send title "翡翠晶の森" to player for 3 seconds
 on leftclick holding a stick:
   set {hisui} to location of player
