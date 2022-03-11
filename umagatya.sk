@@ -9,5 +9,5 @@ On Vehicle Exit:
  if event-entity is a player:
   kill event-entity
 On Vehicle Exit:
- kill a event-entity
+ damage event-entity by 30 hearts
 
