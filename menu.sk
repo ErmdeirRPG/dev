@@ -36,3 +36,9 @@ on inventory click:
 on inventory click:
  name of event-inventory is "sutehuri"
  cancel event
+on inventory click:
+ name of event-inventory is "sukirulist"
+ cancel event
+on inventory click:
+ name of event-inventory is "uma"
+ cancel event
