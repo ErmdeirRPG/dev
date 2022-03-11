@@ -46,10 +46,10 @@ on inventory click:
  if event-item is skeleton horse spawn egg named "ssr":
   uma(10,10,player)
   set {setuma%player%} to "ssr"
- if event-item is horse spawn  egg named "speed":
+ if event-item is horse spawn egg named "speed":
   uma(8,3,player)
   set {setuma%player%} to "speed"
- if event-item is horse spawn  egg named "jump":
+ if event-item is horse spawn egg named "jump":
   uma(3,8,player)
   set {setuma%player%} to "jump"
 on inventory click:
