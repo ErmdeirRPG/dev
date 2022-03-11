@@ -11,6 +11,6 @@ On Vehicle Exit:
 on death of a horse:
  clear drops
 function uma(s:number,j:number,p:player):
- send "%{setuma%player%}%がセットされました%" to {_p}
+ send "%{setuma%{_p}%}%がセットされました%" to {_p}
  set {umaspeed%{_p}%} to {_s}
  set {umajump%{_p}%} to {_j}
