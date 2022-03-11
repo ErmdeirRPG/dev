@@ -12,7 +12,6 @@ on inventory click:
  cancel event
  if event-item is Golden Sword:
   open chest inventory with 5 row named "sukirulist" to player
-  cancel event
  if event-item is Bottle o' Enchanting:
   open chest inventory with 1 row named "sutehuri" to player
   set slot 0 of player's current inventory to apple named "VIT %{vit%player%}%" with lore "最大HP%{hp%player%}%"
