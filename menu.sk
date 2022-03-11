@@ -6,8 +6,6 @@ on rightclick holding sunflower:
  set slot 2 of player's current inventory to Golden Sword named "sukiru%{sukiru.%player%}%" with lore "セット中 %{sukiru.%player%::*}%"
  set slot 3 of player's current inventory to saddle named "馬" with lore "セット中%{setuma%player%}%"
  set slot 8 of player's current inventory to barrier named "close"
- 
-
 on inventory click:
  name of event-inventory is "meinmenu"
  cancel event
