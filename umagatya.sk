@@ -7,4 +7,4 @@ on right click:
         make player ride spawned horse
 On Vehicle Exit:
  if event-entity is a player:
-  kill event-entity
+  kill a event-entity
