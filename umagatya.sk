@@ -2,6 +2,6 @@ on right click:
     if player's tool is saddle:
         spawn horse at player
         add "{Variant:259,SaddleItem:{id:saddle,Count:1},Age:0}" to last spawned entity's nbt
-        apply speed 2 to entity for 12 seconds
+        apply speed 2 to spawned entity for 12 seconds
         tame last spawned entity to player
         make player ride spawned horse
