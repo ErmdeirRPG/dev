@@ -23,6 +23,12 @@ on inventory click:
   set slot 4 of player's current inventory to emerald named "MHY %{mhy%player%}%" with lore "回復力xxxx"
   set slot 5 of player's current inventory to feather named "AGI %{agi%player%}%" with lore "speed xxxx" and "criticalchance x" and "criticaldamage xx"
   set slot 8 of player's current inventory to barrier named "close"
+ if event-item is saddle:
+  open chest inventory with 5 row named "馬一覧"
+  set slot 0 of player's current inventory to skeleton horse spawn egg named "ssr" with lore "すごい骨"
+  set slot 9 of player's current inventory to horse spawn egg named "speed" with lore "速い馬"
+  set slot of 10 player's current inventory to horse spawn egg named "jump" with lore "高い馬"
+  set slot of 44 player's current inventory to barrier named "close"
  if event-item is barrier:
   close player's inventory
 on inventory click:
@@ -36,6 +42,11 @@ on inventory click:
   set slot 8 of player's current inventory to barrier named "close"
 on inventory click:
  name of event-inventory is "ステ振り"
+ cancel event
+ if event-item is barrier:
+  close player's inventory
+on inventory click:
+ name of event-inventory is "馬一覧"
  cancel event
  if event-item is barrier:
   close player's inventory
