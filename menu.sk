@@ -12,6 +12,7 @@ on inventory click:
  cancel event
  if event-item is Golden Sword:
   open chest inventory with 5 row named "sukirulist" to player
+  cancel event
  if event-item is Bottle o' Enchanting:
   open chest inventory with 1 row named "sutehuri" to player
   set slot 0 of player's current inventory to apple named "VIT %{vit%player%}%" with lore "最大HP%{hp%player%}%"
@@ -20,8 +21,6 @@ on inventory click:
   set slot 3 of player's current inventory to iron Chestplate named "DEF %{def%player%}%" with lore "物理防御 %{def%player%}%/1000" and "属性防御 %{def%player%}%/2000+%{elm%player%}%/2000"
   set slot 4 of player's current inventory to emerald named "MHY %{mhy%player%}%" with lore "回復力xxxx"
   set slot 5 of player's current inventory to feather named "AGI %{agi%player%}%" with lore "speed xxxx" and "criticalchance x" and "criticaldamage xx"
- if event item is saddle:
-  open chest inventory with 5 row named "uma" to player
  if event-item is barrier:
   close player's inventory
 on inventory click:
@@ -35,10 +34,4 @@ on inventory click:
   set slot 8 of player's current inventory to barrier named "close"
 on inventory click:
  name of event-inventory is "sutehuri"
- cancel event
-on inventory click:
- name of event-inventory is "sukirulist"
- cancel event
-on inventory click:
- name of event-inventory is "uma"
  cancel event
