@@ -41,7 +41,7 @@ on inventory click:
   set slot 3 of player's current inventory to saddle named "馬" with lore "セット中%{setuma%player%}%"
   set slot 8 of player's current inventory to barrier named "close"
 on inventory click:
- name of inventory name is "馬一覧"
+ name of event-inventory is "馬一覧"
  cancel event
  if event-item is skeleton horse spawn egg named "ssr":
   uma(10,10,player)
