@@ -1,5 +1,5 @@
 on right click:
-    if player's tool is saddle named "&6Jhu le Horse":
+    if player's tool is saddle:
         spawn horse at player
         add "{Variant:259,SaddleItem:{id:saddle,Count:1},Age:0}" to last spawned entity's nbt
         tame last spawned entity to player
