@@ -3,7 +3,7 @@ on right click:
   spawn horse at player
   add "{Variant:259,SaddleItem:{id:saddle,Count:1},Age:0}" to last spawned entity's nbt
   apply speed {umaspeed%player%} to spawned entity for 1 minute
-  apply jamp {umajamp%player%} to spawned entity for 1 minute
+  apply jump_boost {umajamp%player%} to spawned entity for 1 minute
   tame last spawned entity to player
   make player ride spawned horse
 On Vehicle Exit:
@@ -11,6 +11,6 @@ On Vehicle Exit:
 on death of a horse:
  clear drops
 function uma(s:namber,j:namber,p:player)
- set {umaspeed%{_p}%} to {_s}
- set {umajamp%{_p}%} to {_j}
+set {umaspeed%{_p}%} to {_s}
+set {umajamp%{_p}%} to {_j}
 
