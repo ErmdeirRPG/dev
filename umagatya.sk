@@ -6,6 +6,6 @@ on right click:
         tame last spawned entity to player
         make player ride spawned horse
 On Vehicle Exit:
- kill all creepers in radius 5 of player
+ kill all horse in radius 5 of player
 on death of a horse:
  clear drops
