@@ -59,6 +59,5 @@ on inventory click:
   close player's inventory
 on inventory click:
  name of event-inventory is "馬一覧"
- cancel event
  if event-item is barrier:
   close player's inventory
