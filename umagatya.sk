@@ -8,6 +8,6 @@ on right click:
 On Vehicle Exit:
  living entities in radius 5 of player:
   entity is horse
-   kill loop entity
+  kill loop entity
 on death of a horse:
  clear drops
