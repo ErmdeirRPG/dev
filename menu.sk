@@ -49,9 +49,9 @@ on inventory click:
  if event-item is horse spawn  egg named "speed":
   uma(8,3,player)
   set {setuma%player%} to "speed"
- if event-item is horse spawn  egg named "jamp":
+ if event-item is horse spawn  egg named "jump":
   uma(3,8,player)
-  set {setuma%player%} to "jamp"
+  set {setuma%player%} to "jump"
 on inventory click:
  name of event-inventory is "ステ振り"
  cancel event
