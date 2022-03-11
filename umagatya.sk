@@ -10,7 +10,7 @@ On Vehicle Exit:
  kill all horses in radius 5 of player
 on death of a horse:
  clear drops
-function uma(s:namber,j:namber,p:player)
-set {umaspeed%{_p}%} to {_s}
-set {umajamp%{_p}%} to {_j}
+function uma(s:namber,j:namber,p:player):
+ set {umaspeed%{_p}%} to {_s}
+ set {umajamp%{_p}%} to {_j}
 
