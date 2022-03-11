@@ -6,6 +6,6 @@ on right click:
         tame last spawned entity to player
         make player ride spawned horse
 On Vehicle Exit:
- kill event-Vehicle
+ kill 
 on death of a horse:
  clear drops
