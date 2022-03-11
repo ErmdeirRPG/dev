@@ -27,8 +27,8 @@ on inventory click:
   open chest inventory with 5 row named "馬一覧" to player
   set slot 0 of player's current inventory to skeleton horse spawn egg named "ssr" with lore "すごい骨"
   set slot 9 of player's current inventory to horse spawn egg named "speed" with lore "速い馬"
-  set slot of 10 player's current inventory to horse spawn egg named "jump" with lore "高い馬"
-  set slot of 44 player's current inventory to barrier named "close"
+  set slot 10 of player's current inventory to horse spawn egg named "jump" with lore "高い馬"
+  set slot 44 of player's current inventory to barrier named "close"
  if event-item is barrier:
   close player's inventory
 on inventory click:
