@@ -42,16 +42,16 @@ on inventory click:
   set slot 8 of player's current inventory to barrier named "close"
 on inventory click:
  name of inventory name is 馬一覧
-  cancel event
-  if event-item is skeleton horse spawn egg named "ssr":
-   uma(10,10,player)
-   set {setuma%player%} to "ssr"
-  if event-item is horse spown  egg named "speed":
-   uma(8,3,player)
-   set {setuma%player%} to "speed"
-  if event-item is horse spown  egg named "jamp":
-   uma(3,8,player)
-   set {setuma%player%} to "jamp"
+cancel event
+if event-item is skeleton horse spawn egg named "ssr":
+ uma(10,10,player)
+ set {setuma%player%} to "ssr"
+ if event-item is horse spown  egg named "speed":
+ uma(8,3,player)
+ set {setuma%player%} to "speed"
+if event-item is horse spown  egg named "jamp":
+  uma(3,8,player)
+  set {setuma%player%} to "jamp"
 on inventory click:
  name of event-inventory is "ステ振り"
  cancel event
