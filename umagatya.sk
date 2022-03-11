@@ -6,7 +6,7 @@ on right click:
         tame last spawned entity to player
         make player ride spawned horse
 On Vehicle Exit:
- loop 1 times:
+ loop 2 times:
   loop living entities in radius 5 of player:
   loop entity is horse
    kill loop entity
