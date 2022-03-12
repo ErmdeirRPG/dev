@@ -7,7 +7,7 @@ on right click:
   tame last spawned entity to player
   make player ride spawned horse
 On Vehicle Exit:
- kill all horses in radius 5 of player
+ kill a horses in radius 5 of player
 on death of a horse:
  clear drops
 function uma(s:number,j:number,p:player):
