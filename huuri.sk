@@ -15,6 +15,7 @@ command /menu:
                 set slot 22 of player's current inventory to {armor[2].%player%}
                 set slot 31 of player's current inventory to {armor[1].%player%}
                 set slot 40 of player's current inventory to {armor[0].%player%}
+                set slot 53 of player's current inventory to barrier named "&c&lメニューを閉じる"
         else:
             set {menu.%player%} to "menu"
 
@@ -33,7 +34,8 @@ on inventory click:
     name of clicked inventory is "アーマー"
     if event-item is white glass pane named "&c&lクリック不可":
         cancel event
-
+    if event-item is barrier named "&c&lメニューを閉じる":
+        close player's inventory
 command /armorset:
     permission:skript.admin
     trigger:
