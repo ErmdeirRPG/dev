@@ -38,7 +38,7 @@ on inventory click:
 command /armorset:
     permission:skript.admin
     trigger:
-        set {armor[3].%player%} to iron helmet
-        set {armor[2].%player%} to iron chestplate
-        set {armor[1].%player%} to iron leggings
-        set {armor[0].%player%} to iron boots
+        set {armor[3].%player%} to iron helmet named ""
+        set {armor[2].%player%} to iron chestplate named ""
+        set {armor[1].%player%} to iron leggings named ""
+        set {armor[0].%player%} to iron boots named ""
