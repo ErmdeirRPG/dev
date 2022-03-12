@@ -1,3 +1,4 @@
 on damage:
+ send "yaba" to attacker  
  attacker is player
- send attacker to "itai"
+ send "itai" to attacker
