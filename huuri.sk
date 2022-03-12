@@ -11,6 +11,10 @@ command /menu:
                 loop 54 times:
                     set slot {_i} of player's current inventory to {_glass}
                     add 1 to {_i}
+                set slot 13 of player's current inventory to air
+                set slot 22 of player's current inventory to air
+                set slot 31 of player's current inventory to air
+                set slot 40 of player's current inventory to air
         else:
             set {menu.%player%} to "menu"
 
