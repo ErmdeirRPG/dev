@@ -8,6 +8,7 @@ on right click:
   make player ride spawned horse
 On Vehicle Exit:
  kill a horses in radius 1 of player
+ kill a skeleton horse in radius 1 of player
 on death of a horse:
  clear drops
 function uma(s:number,j:number,p:player):
