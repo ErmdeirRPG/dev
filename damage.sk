@@ -1,2 +1,2 @@
-on damage of a player:
+on damage of a zombie:
  send "itai" to attacker
