@@ -1,4 +1,13 @@
-on rightclick holding a diamond sword:
-    push the player upwards at force 1
-    push the player backwards at force 5
-    shoot an arrow at speed 5
+command /menu:
+ trigger:
+  if {menu.%player%} is set:
+  else:
+   set {menu.%player%} to "menu"
+  if (menu.%player%) is "menu":
+   open chest inventory with 6 row named "メインメニュー" to player
+  if (menu.%player%) is "armor"
+      open chest inventory with 5 row named "アーマー" to player
+
+command /armor:
+ trigger:
+  set {menu.%player%} to "armor"
