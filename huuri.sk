@@ -1,12 +1,13 @@
 command /menu:
  trigger:
   if {menu.%player%} is set:
+   if (menu.%player%) is "menu":
+    open chest inventory with 6 row named "メインメニュー" to player
+   if (menu.%player%) is "armor"
+    open chest inventory with 5 row named "アーマー" to player
   else:
    set {menu.%player%} to "menu"
-  if (menu.%player%) is "menu":
-   open chest inventory with 6 row named "メインメニュー" to player
-  if (menu.%player%) is "armor"
-      open chest inventory with 5 row named "アーマー" to player
+
 
 command /armor:
  trigger:
