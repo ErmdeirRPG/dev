@@ -1,2 +1,3 @@
-on damage of a zombie:
- send "itai" to attacker
+on damage:
+ attacker is player
+ send attacker to "itai"
