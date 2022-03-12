@@ -6,7 +6,7 @@ command /menu:
                 open chest inventory with 6 row named "メインメニュー" to player
             if {menu.%player%} is "armor":
                 set {_i} to 0
-                set {_glass} to white glass pane named ""
+                set {_glass} to white glass pane named "&c&lクリック不可"
                 open chest inventory with 6 row named "アーマー" to player
                 loop 54 times:
                     set slot {_i} of player's current inventory to {_glass}
@@ -31,9 +31,8 @@ command /menuset:
 
 on inventory click:
     name of clicked inventory is "アーマー"
-    cancel event
-    if event-item is stone named "Yeah":
-        send "Yeah" to player
+    if event-item is white glass pane named "&c&lクリック不可":
+        cancel event
 
 command /armorset:
     permission:skript.admin
