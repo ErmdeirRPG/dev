@@ -24,3 +24,9 @@ command /menuset:
     permission:skript.admin
     trigger:
         set {menu.%player%} to "menu"
+
+on inventory click:
+    name of clicked inventory is "メインメニュー"
+    cancel event
+    if event-item is stone named "Yeah":
+        send "Yeah" to player
