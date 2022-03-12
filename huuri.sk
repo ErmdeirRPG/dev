@@ -34,3 +34,11 @@ on inventory click:
     cancel event
     if event-item is stone named "Yeah":
         send "Yeah" to player
+
+command /armorset:
+    permission:skript.admin
+    trigger:
+        set {armor[3].%player%} to iron helmet
+        set {armor[2].%player%} to iron chestplate
+        set {armor[1].%player%} to iron leggings
+        set {armor[0].%player%} to iron boots
