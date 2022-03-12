@@ -1,3 +1,2 @@
 on damage:
- attacker is a player
  add 1000 to damage
