@@ -26,7 +26,7 @@ command /menuset:
         set {menu.%player%} to "menu"
 
 on inventory click:
-    name of clicked inventory is "メインメニュー"
+    name of clicked inventory is "アーマー"
     cancel event
     if event-item is stone named "Yeah":
         send "Yeah" to player
