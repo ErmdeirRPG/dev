@@ -5,7 +5,12 @@ command /menu:
             if {menu.%player%} is "menu":
                 open chest inventory with 6 row named "メインメニュー" to player
             if {menu.%player%} is "armor":
-                open chest inventory with 5 row named "アーマー" to player
+                set {_i} to 0
+                set {_glass} to white glass pane named ""
+                open chest inventory with 6 row named "アーマー" to player
+                loop 54 times:
+                    set slot {_i} of player's current inventory to {_glass}
+                    add 1 to {_i}
         else:
             set {menu.%player%} to "menu"
 
@@ -14,3 +19,8 @@ command /armor:
     permission:skript.admin
     trigger:
         set {menu.%player%} to "armor"
+
+command /menuset:
+    permission:skript.admin
+    trigger:
+        set {menu.%player%} to "menu"
