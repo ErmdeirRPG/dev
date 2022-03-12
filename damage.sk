@@ -1,2 +1,2 @@
-on damage by player:
+on damage:
  add 1000 to damage
