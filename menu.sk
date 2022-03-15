@@ -4,7 +4,6 @@ on rightclick holding sunflower:
  set slot 0 of player's current inventory to Bottle o' Enchanting named "level %{level%player%}%" with lore "next level %{needexp%player%}%" and "使用可能なステータスポイント%{sute-tasu%player%}%"
  set slot 1 of player's current inventory to Diamond Sword named "status" with lore "HP%{hp%player%}%" and "MP%{mps%player%}%/5秒"
  set slot 2 of player's current inventory to Golden Sword named "sukiru%{sukiru.%player%}%" with lore "セット中 %{sukiru.%player%::*}%"
- set slot 3 of player's current inventory to saddle named "馬" with lore "セット中%{setuma%player%}%"
  set slot 8 of player's current inventory to barrier named "close"
 on inventory click:
  name of event-inventory is "meinmenu"
@@ -21,12 +20,6 @@ on inventory click:
   set slot 4 of player's current inventory to emerald named "MHY %{mhy%player%}%" with lore "回復力xxxx"
   set slot 5 of player's current inventory to feather named "AGI %{agi%player%}%" with lore "speed xxxx" and "criticalchance x" and "criticaldamage xx"
   set slot 8 of player's current inventory to barrier named "close"
- if event-item is saddle:
-  open chest inventory with 5 row named "馬一覧" to player
-  set slot 0 of player's current inventory to skeleton horse spawn egg named "ssr" with lore "すごい骨"
-  set slot 9 of player's current inventory to horse spawn egg named "speed" with lore "速い馬"
-  set slot 10 of player's current inventory to horse spawn egg named "jump" with lore "高い馬"
-  set slot 44 of player's current inventory to barrier named "close"
  if event-item is barrier:
   close player's inventory
 on inventory click:
@@ -36,27 +29,4 @@ on inventory click:
   set slot 0 of player's current inventory to Bottle o' Enchanting named "level %{level%player%}%" with lore "next level %{needexp%player%}%" and "使用可能なステータスポイント%{sute-tasu%player%}%"
   set slot 1 of player's current inventory to Diamond Sword named "status" with lore "HP%{hp%player%}%" and "MP%{mps%player%}%/5秒"
   set slot 2 of player's current inventory to Golden Sword named "sukiru%{sukiru.%player%}%" with lore "セット中 %{sukiru.%player%::*}%"
-  set slot 3 of player's current inventory to saddle named "馬" with lore "セット中%{setuma%player%}%"
   set slot 8 of player's current inventory to barrier named "close"
-on inventory click:
- name of event-inventory is "馬一覧"
- cancel event
- if event-item is skeleton horse spawn egg named "ssr":
-  uma(10,10,player)
-  set {setuma%player%} to "ssr"
-  send "ssr" to player
- if event-item is horse spawn egg named "speed":
-  uma(8,3,player)
-  set {setuma%player%} to "speed"
- if event-item is horse spawn egg named "jump":
-  uma(3,8,player)
-  set {setuma%player%} to "jump"
-on inventory click:
- name of event-inventory is "ステ振り"
- cancel event
- if event-item is barrier:
-  close player's inventory
-on inventory click:
- name of event-inventory is "馬一覧"
- if event-item is barrier:
-  close player's inventory
