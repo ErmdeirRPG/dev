@@ -30,3 +30,5 @@ on inventory click:
   cancel event
  if event-item is barrier:
   close inventory
+on inventory close:
+ 
