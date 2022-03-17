@@ -3,7 +3,7 @@ command /knockback [<number>]:
         if arg-1 is set:
             set {knockback-power} to arg-1
         else:
-            message "&1&l現在のノックバック値は&6&l%{knockback-power}%&1&lです" to player
+            message "&1&l現在のノックバック値：&6&l%{knockback-power}%&1&l" to player
 on right click with iron sword:
     if name of event-item is "ソードバッシュ":
         if {cooltime.%player%} is 0:
