@@ -3,7 +3,7 @@ on leftclick  holding Sunflower:
  set slot 0 of player's current inventory to Bottle o' Enchanting named "level %{level%player%}%" with lore "next level %{needexp%player%}%" and "使用可能なステータスポイント%{sute-tasu%player%}%"
  set slot 1 of player's current inventory to Diamond Sword named "status" with lore "HP%{hp%player%}%" and "MP%{mps%player%}%/5秒"
  set slot 2 of player's current inventory to Golden Sword named "sukiru%{sukiru.%player%}%" with lore "セット中 %{sukiru.%player%::*}%"
- set slot 3 of player's current inventory to iron Chestplate named "armer" with lore ""
+ set slot 3 of player's current inventory to iron Chestplate named "armer" with lore "a"
  set slot 8 of player's current inventory to barrier named "close"
  open chest inventory with 5 row named "スキルリスト" to player
  set {sukirulist.%player%} to chest inventory with 5 row named"スキルリスト
@@ -27,5 +27,5 @@ on inventory click:
   open {sute.%player%} to player
   cancel event
  if event-item is barrier:
-  close inventory
+  close players inventory
  
