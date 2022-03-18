@@ -1,6 +1,6 @@
 on rightclick holding sunflower:
  open chest inventory with 1 row named "メインメニュー" to player
-  set {_glass} to white glass pane named ""
+ set {_glass} to white glass pane named ""
  loop 9 times:
   set slot {_i} of player's current inventory to {_glass}
   add 1 to {_i}
