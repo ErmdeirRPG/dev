@@ -6,8 +6,6 @@ on rightclick holding sunflower:
  set slot 3 of player's current inventory to iron Chestplate named "armer" with lore "a"
  set slot 8 of player's current inventory to barrier named "close"
  open chest inventory with 5 row named "スキルリスト" to player
- set {sukirulist.%player%} to chest inventory with 5 row named "スキルリスト"
- wait 5 tick
  open chest inventory with 1 row named "ステ振り" to player
  set slot 0 of player's current inventory to apple named "VIT %{vit%player%}%" with lore "最大HP%{hp%player%}%"
  set slot 1 of player's current inventory to anvil named "STR %{str%player%}%" with lore "物理ダメージボーナスxxxx"
