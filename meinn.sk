@@ -5,25 +5,22 @@ on rightclick holding sunflower:
  set slot 2 of player's current inventory to Golden Sword named "sukiru%{sukiru.%player%}%" with lore "セット中 %{sukiru.%player%::*}%"
  set slot 3 of player's current inventory to iron Chestplate named "armer" with lore "a"
  set slot 8 of player's current inventory to barrier named "close"
- open chest inventory with 5 row named "スキルリスト" to player
- open chest inventory with 1 row named "ステ振り" to player
- set slot 0 of player's current inventory to apple named "VIT %{vit%player%}%" with lore "最大HP%{hp%player%}%"
- set slot 1 of player's current inventory to anvil named "STR %{str%player%}%" with lore "物理ダメージボーナスxxxx"
- set slot 2 of player's current inventory to blaze powder named "ELM %{elm%player%}%" with lore "属性ダメージボーナスxxxx"
- set slot 3 of player's current inventory to iron Chestplate named "DEF %{def%player%}%" with lore "物理防御 %{def%player%}%/1000" and "属性防御 %{def%player%}%/2000+%{elm%player%}%/2000"
- set slot 4 of player's current inventory to emerald named "MHY %{mhy%player%}%" with lore "回復力xxxx"
- set slot 5 of player's current inventory to feather named "AGI %{agi%player%}%" with lore "speed xxxx" and "criticalchance x" and "criticaldamage xx"
- set slot 8 of player's current inventory to barrier named "close"
- set {sute.%player%} to chest inventory with 1 row named"ステ振り"
 on inventory click:
  name of event-inventory is "メインメニュー"
  cancel event
- if event-item is Golden Sword:
-  open {sukirulist.%player%} to player
+ if event-item is Golden Sword:#スキルリスト
+  open chest inventory with 5 row named "スキルリスト" to player
   cancel event
- if event-item is Bottle o' Enchanting:
-  open {sute.%player%} to player
+ if event-item is Bottle o' Enchanting:#ステ振り
+  open chest inventory with 1 row named "ステ振り" to player
   cancel event
+  set slot 0 of player's current inventory to apple named "VIT %{vit%player%}%" with lore "最大HP%{hp%player%}%"
+  set slot 1 of player's current inventory to anvil named "STR %{str%player%}%" with lore "物理ダメージボーナスxxxx"
+  set slot 2 of player's current inventory to blaze powder named "ELM %{elm%player%}%" with lore "属性ダメージボーナスxxxx"
+  set slot 3 of player's current inventory to iron Chestplate named "DEF %{def%player%}%" with lore "物理防御 %{def%player%}%/1000" and "属性防御 %{def%player%}%/2000+%{elm%player%}%/2000"
+  set slot 4 of player's current inventory to emerald named "MHY %{mhy%player%}%" with lore "回復力xxxx"
+  set slot 5 of player's current inventory to feather named "AGI %{agi%player%}%" with lore "speed xxxx" and "criticalchance x" and "criticaldamage xx"
+  set slot 8 of player's current inventory to barrier named "close"
  if event-item is barrier:
   close player's inventory
  
