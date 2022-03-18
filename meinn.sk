@@ -1,4 +1,4 @@
-on leftclick  holding sunflower:
+on leftclick  holding Sunflower:
  open chest inventory with 1 row named "メインメニュー" to player
  set slot 0 of player's current inventory to Bottle o' Enchanting named "level %{level%player%}%" with lore "next level %{needexp%player%}%" and "使用可能なステータスポイント%{sute-tasu%player%}%"
  set slot 1 of player's current inventory to Diamond Sword named "status" with lore "HP%{hp%player%}%" and "MP%{mps%player%}%/5秒"
