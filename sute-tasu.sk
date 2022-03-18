@@ -10,7 +10,7 @@ command /status:
 every seconds:
  loop all players:
   set {hp%loop-player%} to {level%loop-player%}*10+{vit%loop-player%}*5
-  set {Strength%loop-player%} to {level%loop-player%}*2+{str%loop-player%}
+  set {Strength%loop-player%} to {level%loop-player%}*2+{str%loop-player%}*1
   set {estr%loop-player%} to {level%loop-player%}*2+{elm%loop-player%}
   set {heal%loop-player%} to {level%loop-player%}*4+{mhy%loop-player%}
   set {speed%loop-player%} to {level%loop-player%}+{agi%loop-player%}*0.3
