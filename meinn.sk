@@ -27,5 +27,5 @@ on inventory click:
   open {sute.%player%} to player
   cancel event
  if event-item is barrier:
-  close players inventory
+  close player's inventory
  
