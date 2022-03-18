@@ -1,6 +1,6 @@
 on rightclick holding sunflower:
  open chest inventory with 1 row named "メインメニュー" to player
- set {_glass} to white glass pane named ""
+ set {_glass} to white glass pane named "0"
  loop 9 times:
   set slot {_i} of player's current inventory to {_glass}
   add 1 to {_i}
@@ -15,9 +15,17 @@ on inventory click:
  if event-item is Golden Sword:#スキルリスト
   open chest inventory with 5 row named "スキルリスト" to player
   cancel event
+  set {_glass} to white glass pane named "0"
+  loop 45 times:
+   set slot {_i} of player's current inventory to {_glass}
+   add 1 to {_i}
  if event-item is Bottle o' Enchanting:#ステ振り
   open chest inventory with 1 row named "ステ振り" to player
   cancel event
+  set {_glass} to white glass pane named "0"
+  loop 9 times:
+   set slot {_i} of player's current inventory to {_glass}
+   add 1 to {_i}
   set slot 0 of player's current inventory to apple named "VIT %{vit%player%}%" with lore "最大HP%{hp%player%}%"
   set slot 1 of player's current inventory to anvil named "STR %{str%player%}%" with lore "物理ダメージボーナスxxxx"
   set slot 2 of player's current inventory to blaze powder named "ELM %{elm%player%}%" with lore "属性ダメージボーナスxxxx"
