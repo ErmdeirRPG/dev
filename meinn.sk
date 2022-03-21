@@ -50,6 +50,7 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
   set slot 31 of player's current inventory to air
   set slot 40 of player's current inventory to air
   set slot 53 of player's current inventory to barrier
+  open {armer%player%} to player
  if event-item is barrier:
   close player's inventory
 on inventory click:
