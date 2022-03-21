@@ -21,6 +21,7 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
   loop 45 times:
    set slot {_i} of player's current inventory to {_glass}
    add 1 to {_i}
+  set slot 44 of player's current inventory to barrier
  if event-item is Bottle o' Enchanting:#ステ振り
   open chest inventory with 1 row named "ステ振り" to player
   cancel event
@@ -51,9 +52,8 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
   set slot 53 of player's current inventory to barrier
  if event-item is barrier:
   close player's inventory
-
 on inventory click:
- if event inventory is "スキルリスト":
+ if event-inventory is "スキルリスト":
   cancel event
   if event-item is barrier:
    close player's inventory
@@ -61,7 +61,7 @@ on inventory click:
   cancel event
   if event-item is barrier:
    close player's inventory
- if event inventory is "armer":
+ if event-inventory is "armer":
   if event-item is barrier:
    close player's inventory
   if event-item is white glass pane:
