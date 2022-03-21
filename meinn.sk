@@ -1,6 +1,7 @@
 on rightclick holding sunflower:#メインメニュー
  open chest inventory with 1 row named "メインメニュー" to player
  set {_glass} to white glass pane named "0"
+ set {_i} to 0
  loop 9 times:
   set slot {_i} of player's current inventory to {_glass}
   add 1 to {_i}
@@ -16,6 +17,7 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
   open chest inventory with 5 row named "スキルリスト" to player
   cancel event
   set {_glass} to white glass pane named "0"
+  set {_i} to 0
   loop 45 times:
    set slot {_i} of player's current inventory to {_glass}
    add 1 to {_i}
@@ -23,6 +25,7 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
   open chest inventory with 1 row named "ステ振り" to player
   cancel event
   set {_glass} to white glass pane named "0"
+  set {_i} to 0
   loop 9 times:
    set slot {_i} of player's current inventory to {_glass}
    add 1 to {_i}
@@ -37,6 +40,7 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
   open chest inventory with 6 row named "armer" to player
   cancel event
   set {_glass} to white glass pane named "0"
+  set {_i} to 0
   loop 54 times:
    set slot {_i} of player's current inventory to {_glass}
    add 1 to {_i}
