@@ -62,7 +62,6 @@ on inventory click:
   if event-item is barrier:
    close player's inventory
  if event inventory is "armer":
-  cancel event
   if event-item is barrier:
    close player's inventory
   if event-item is white glass pane:
