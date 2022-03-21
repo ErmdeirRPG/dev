@@ -70,7 +70,8 @@ on inventory click:
  if event-item is white glass pane:
   cancel event
 on inventory close:#アーマー保管
- send "a" to player
+ name of event-inventory is "armer"
+ set {gui.%player%} to chest inventory with 6 row named "armer"
  
 
  
