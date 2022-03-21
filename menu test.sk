@@ -1,0 +1,11 @@
+command /test <text>:
+	trigger:
+		if arg-1 is "save":
+			if target block of player is a chest:
+				send "&aSaving inventory"
+				delete {SavedInv::%player%::*}
+				loop items in inventory of target block of player:
+					add loop-item to {SavedInv::%player%::*}
+		if arg-1 is "load":
+			open chest inventory to player
+			add {SavedInv::%player%::*} to current inventory of player

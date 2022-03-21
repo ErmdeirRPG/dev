@@ -71,7 +71,5 @@ on inventory click:
   cancel event
 on inventory close:#アーマー保管
  name of event-inventory is "armer"
- set {gui.%player%} to chest inventory with 6 row named "armer"
- 
-
+ set {armer%player%} to chest inventory with 6 row named "armer"
  
