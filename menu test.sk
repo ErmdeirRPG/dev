@@ -7,5 +7,5 @@ command /test <text>:
 				loop items in inventory of target block of player:
 					add loop-item to {SavedInv::%player%::*}
 		if arg-1 is "load":
-			open chest inventory to player with 6 row
+			open chest inventory with 6 row to player 
 			add {SavedInv::%player%::*} to current inventory of player
