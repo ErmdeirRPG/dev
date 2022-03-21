@@ -34,7 +34,7 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
   set slot 5 of player's current inventory to feather named "AGI %{agi%player%}%" with lore "speed xxxx" and "criticalchance x" and "criticaldamage xx"
   set slot 8 of player's current inventory to barrier named "close"
  if event-item is iron Chestplate:
-  open chest inventory with 6 row bamef "armer"
+  open chest inventory with 6 row named "armer" to player
   cancel event
   set {_glass} to white glass pane named "0"
   loop 54 times:
