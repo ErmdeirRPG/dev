@@ -44,13 +44,20 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
    set slot 23 of player's current inventory to air
    set slot 32 of player's current inventory to air
    set slot 41 of player's current inventory to air
+   set slot 54 of player's current inventory to barrier
  if event-item is barrier:
   close player's inventory
 on inventory click:
  if event inventory is "スキルリスト":
   cancel event
+  if event-item is barrier:
+   close player's inventory
  if event inventory is "ステ振り":
   cancel event
+  if event-item is barrier:
+   close player's inventory
  if event inventory is "armer":
   cancel event
+  if event-item is barrier:
+   close player's inventory
  
