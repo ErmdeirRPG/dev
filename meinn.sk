@@ -40,11 +40,11 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
   loop 54 times:
    set slot {_i} of player's current inventory to {_glass}
    add 1 to {_i}
-   set slot 14 of player's current inventory to air
-   set slot 23 of player's current inventory to air
-   set slot 32 of player's current inventory to air
-   set slot 41 of player's current inventory to air
-   set slot 54 of player's current inventory to barrier
+  set slot 14 of player's current inventory to air
+  set slot 23 of player's current inventory to air
+  set slot 32 of player's current inventory to air
+  set slot 41 of player's current inventory to air
+  set slot 54 of player's current inventory to barrier
  if event-item is barrier:
   close player's inventory
 on inventory click:
