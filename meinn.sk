@@ -57,7 +57,7 @@ on inventory click:
   cancel event
   if event-item is barrier:
    close player's inventory
- if event inventory is "ステ振り":
+ if event-inventory is "ステ振り":
   cancel event
   if event-item is barrier:
    close player's inventory
