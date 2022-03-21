@@ -57,14 +57,16 @@ on inventory click:
   cancel event
   if event-item is barrier:
    close player's inventory
+on inventory click:
  name of event-inventory is "ステ振り"
-  cancel event
-  if event-item is barrier:
-   close player's inventory
+ cancel event
+ if event-item is barrier:
+  close player's inventory
+on inventory click:
  name of event-inventory is "armer"
-  if event-item is barrier:
-   close player's inventory
-  if event-item is white glass pane:
-   cancel event
+ if event-item is barrier:
+  close player's inventory
+ if event-item is white glass pane:
+  cancel event
 
  
