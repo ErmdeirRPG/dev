@@ -33,6 +33,17 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
   set slot 4 of player's current inventory to emerald named "MHY %{mhy%player%}%" with lore "回復力xxxx"
   set slot 5 of player's current inventory to feather named "AGI %{agi%player%}%" with lore "speed xxxx" and "criticalchance x" and "criticaldamage xx"
   set slot 8 of player's current inventory to barrier named "close"
+ if event item is iron Chestplate:
+  open chest inventory with 6 row bamef "armer"
+  cancel event
+  set {_glass} to white glass pane named "0"
+  loop 54 times:
+   set slot {_i} of player's current inventory to {_glass}
+   add 1 to {_i}
+   set slot 14 of player's current inventory to air
+   set slot 23 of player's current inventory to air
+   set slot 32 of player's current inventory to air
+   set slot 41 of player's current inventory to air
  if event-item is barrier:
   close player's inventory
 on inventory click:
