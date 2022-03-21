@@ -4,10 +4,10 @@ command /test <text>:
    if target block of player is a chest:
     send "&aSaving inventory"
     delete {SavedInv::%player%::*}
-	loop items in inventory of target block of player:
-	 add loop-item to {SavedInv::%player%::*}
-	 if arg-1 is "load":
-	  open chest inventory with 6 row to player 
+    loop items in inventory of target block of player:
+     add loop-item to {SavedInv::%player%::*}
+     if arg-1 is "load":
+      open chest inventory with 6 row to player 
       set {_glass} to white glass pane named "0"
       set {_i} to 0
       loop 54 times:
@@ -18,4 +18,4 @@ command /test <text>:
       set slot 31 of player's current inventory to air
       set slot 40 of player's current inventory to air
       set slot 53 of player's current inventory to barrier
-	  add {SavedInv::%player%::*} to current inventory of player
+      add {SavedInv::%player%::*} to current inventory of player
