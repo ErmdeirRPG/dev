@@ -54,9 +54,9 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
   close player's inventory
 on inventory click:
  name of event-inventory is "スキルリスト"
-  cancel event
-  if event-item is barrier:
-   close player's inventory
+ cancel event
+ if event-item is barrier:
+  close player's inventory
 on inventory click:
  name of event-inventory is "ステ振り"
  cancel event
