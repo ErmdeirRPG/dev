@@ -18,4 +18,4 @@ command /test <text>:
       set slot 31 of player's current inventory to air
       set slot 40 of player's current inventory to air
       set slot 53 of player's current inventory to barrier
-      add {SavedInv::%player%::*} to current inventory of player
+      
