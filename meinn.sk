@@ -1,4 +1,4 @@
-on rightclick holding sunflower:
+on rightclick holding sunflower:#メインメニュー
  open chest inventory with 1 row named "メインメニュー" to player
  set {_glass} to white glass pane named "0"
  loop 9 times:
@@ -9,7 +9,7 @@ on rightclick holding sunflower:
  set slot 2 of player's current inventory to Golden Sword named "sukiru%{sukiru.%player%}%" with lore "セット中 %{sukiru.%player%::*}%"
  set slot 3 of player's current inventory to iron Chestplate named "armer" with lore "a"
  set slot 8 of player's current inventory to barrier named "close"
-on inventory click:
+on inventory click:#メインメニューｃｌｉｃｋ時イベント
  name of event-inventory is "メインメニュー"
  cancel event
  if event-item is Golden Sword:#スキルリスト
@@ -35,4 +35,11 @@ on inventory click:
   set slot 8 of player's current inventory to barrier named "close"
  if event-item is barrier:
   close player's inventory
+on inventory click:
+ if event inventory is "スキルリスト":
+  cancel event
+ if event inventory is "ステ振り":
+  cancel event
+ if event inventory is "armer":
+  cancel event
  
