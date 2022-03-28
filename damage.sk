@@ -1,2 +1,3 @@
 on damage:
- add 100 to damage
+ damager is player
+ add %{Strength%loop-player%}%*2 to damage
