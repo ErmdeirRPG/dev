@@ -1,4 +1,3 @@
-on damage:
- damager is player
- increase the damage by {Strength%loop-player%}*2
- send "gg" to player
+on damage of a player:
+ increase the damage by -{def%player%}/10
+ send "%{def%player%}/10% deffensd" to player
