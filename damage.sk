@@ -1,3 +1,3 @@
 on damage of a player:
- increase the damage by -{def%player%}/10
+ increase the damage by {def%player%}
  send "%{def%player%}% deffensd" to player
