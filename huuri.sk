@@ -37,12 +37,7 @@ on inventory click:
     if event-item is barrier named "&c&lメニューを閉じる":
         close player's inventory
 
-on inventory close:
-    name of event-inventory is "アーマー"
-        set {armor[3].%player%} to slot 13 of player's current inventory
-        set {armor[2].%player%} to slot 22 of player's current inventory
-        set {armor[1].%player%} to slot 31 of player's current inventory
-        set {armor[0].%player%} to slot 40 of player's current inventory
+
 
 command /armorset:
     permission:skript.admin
