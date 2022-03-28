@@ -61,6 +61,24 @@ on inventory click:
 on inventory click:
  name of event-inventory is "ステ振り"
  cancel event
+ if event-item is apple
+  add 1 to {vit%player%}
+  add -1 to {sute-tasu%player%}
+ if event-item is anvil
+  add 1 to {str%player%}
+  add -1 to {sute-tasu%player%}
+ if event-item is blaze powder
+  add 1 to {elm%player%}
+  add -1 to {sute-tasu%player%}
+ if event-item is iron Chestplate
+  add 1 to {def%player%}
+  add -1 to {sute-tasu%player%}
+ if event-item is emerald
+  add 1 to {def%player%}
+  add -1 to {sute-tasu%player%}
+ if event-item is feather
+  add 1 to {agi%player%}
+  add -1 to {sute-tasu%player%}
  if event-item is barrier:
   close player's inventory
 on inventory click:
