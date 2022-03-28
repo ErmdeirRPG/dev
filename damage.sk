@@ -1,3 +1,4 @@
 on damage of a player:
- decrease the damage by {def%victim%}
+ set {_d} to {def%victim%}*-1
+ increase the damage by {_d}
  send "%{def%victim%}% deffensd" to victim
