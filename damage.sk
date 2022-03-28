@@ -1,4 +1,4 @@
 on damage:
  damager is player
- add %{Strength%loop-player%}%*2 to damage
+ increase the damage by {Strength%loop-player%}*2
  send "%{Strength%loop-player%}%*2damage" to player
