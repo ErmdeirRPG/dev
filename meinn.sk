@@ -62,27 +62,27 @@ on inventory click:
  name of event-inventory is "ステ振り"
  cancel event
  if event-item is apple:
-  {sute-tasu%player%} is 0
+  {sute-tasu%player%} is not 0
   add 1 to {vit%player%}
   add -1 to {sute-tasu%player%}
  if event-item is anvil:
-  {sute-tasu%player%} is 0
+  {sute-tasu%player%} is not 0
   add 1 to {str%player%}
   add -1 to {sute-tasu%player%}
  if event-item is blaze powder:
-  {sute-tasu%player%} is 0
+  {sute-tasu%player%} is not 0
   add 1 to {elm%player%}
   add -1 to {sute-tasu%player%}
  if event-item is iron Chestplate:
-  {sute-tasu%player%} is 0
+  {sute-tasu%player%} is not 0
   add 1 to {def%player%}
   add -1 to {sute-tasu%player%}
  if event-item is emerald:
-  {sute-tasu%player%} is 0
+  {sute-tasu%player%} is not 0
   add 1 to {def%player%}
   add -1 to {sute-tasu%player%}
  if event-item is feather:
-  {sute-tasu%player%} is 0
+  {sute-tasu%player%} is not 0
   add 1 to {agi%player%}
   add -1 to {sute-tasu%player%}
  if event-item is barrier:
