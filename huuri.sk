@@ -38,7 +38,7 @@ on inventory click:
         close player's inventory
 
 on inventory close:
-    name of closed inventory is "アーマー"
+    name of event inventory is "アーマー"
         set {armor[3].%player%} to slot 13 of player's current inventory
         set {armor[2].%player%} to slot 22 of player's current inventory
         set {armor[1].%player%} to slot 31 of player's current inventory
