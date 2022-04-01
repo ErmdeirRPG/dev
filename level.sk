@@ -1,7 +1,7 @@
 function keikenti(p:player,e:number):
  send "%{_e}%の経験値を得た" to {_p}
  remove {_e} from {needexp%{_p}%}
- if {needexp%{_p}%}<1:
+ if {needexp%{_p}%} < 1:
   add 1 to {level%{_p}%}
   add 5 to {sute-tasu%{_p}%}
   send title "level up" with subtitle "level%{level%{_p}%}%" to {_p} for 3 seconds
