@@ -8,11 +8,6 @@ every seconds:
   set {speed%loop-player%} to {level%loop-player%}+{agi%loop-player%}*0.3
   set {critical%loop-player%} to {level%loop-player%}+{agi%loop-player%}
   set {mps%loop-player%} to {level%loop-player%}*2
-  if {needexp%{_p}%} < 1:
-   add 1 to {level%{_p}%}
-   add 5 to {sute-tasu%{_p}%}
-   send title "level up" with subtitle "level%{level%{_p}%}%" to {_p} for 3 seconds
-   add {level%{_p}%}*10 to {needexp%{_p}%}
 every second:
  loop all players:
   wait 3 second
