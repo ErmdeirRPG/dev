@@ -4,6 +4,5 @@ on damage of a player:
  send "&4%{def%victim%}% deffensd" to victim
  send "受けただまげ &4%final damage%" to victim
 on damage:
- attacker is player
  send "$1だまげぼーなす%{strength%attacker%}%" to attacker
  send "Hit for &4%final damage%" to attacker
