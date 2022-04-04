@@ -31,9 +31,9 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
    set slot {_i} of player's current inventory to {_glass}
    add 1 to {_i}
   set slot 0 of player's current inventory to apple named "VIT %{vit%player%}%" with lore "最大HP%{hp%player%}%"
-  set slot 1 of player's current inventory to anvil named "STR %{str%player%}%" with lore "物理ダメージボーナスxxxx"
+  set slot 1 of player's current inventory to anvil named "STR %{str%player%}%" with lore "だまげぼーなす%{strength%attacker%}%"
   set slot 2 of player's current inventory to blaze powder named "INT %{int%player%}%" with lore "これが高いやつ賢い"
-  set slot 3 of player's current inventory to iron Chestplate named "DEF %{def%player%}%" with lore "物理防御 %{def%player%}%/1000" and "属性防御 %{def%player%}%/2000+%{elm%player%}%/2000"
+  set slot 3 of player's current inventory to iron Chestplate named "DEF %{def%player%}%" with lore "物理防御 %{def%player%}%/1000" and "属性防御 なくなりました"
   set slot 4 of player's current inventory to feather named "AGI %{agi%player%}%" with lore "speed xxxx" and "criticalchance x" and "criticaldamage xx"
   set slot 8 of player's current inventory to barrier named "close"
  if event-item is iron Chestplate:
