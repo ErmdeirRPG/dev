@@ -75,11 +75,6 @@ on inventory click:
   add 1 to {def%player%}
   add -1 to {sute-tasu%player%}
   set slot 3 of player's current inventory to iron Chestplate named "DEF %{def%player%}%" with lore "物理防御 %{def%player%}%/1000" and "属性防御 %{def%player%}%/2000+%{elm%player%}%/2000"
- if event-item is emerald:
-  {sute-tasu%player%} is not 0
-  add 1 to {def%player%}
-  add -1 to {sute-tasu%player%}
-  set slot 4 of player's current inventory to emerald named "MHY %{mhy%player%}%" with lore "回復力xxxx"
  if event-item is feather:
   {sute-tasu%player%} is not 0
   add 1 to {agi%player%}
