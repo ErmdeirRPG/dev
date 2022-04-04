@@ -6,7 +6,6 @@ function keikenti(p:player,e:number):
   add 5 to {sute-tasu%{_p}%}
   send title "level up" with subtitle "level%{level%{_p}%}%" to {_p} for 3 seconds
   add {level%{_p}%}*10 to {needexp%{_p}%}
-  tyouka(p:player)
 on first join:
  set {level%player%} to 1
  set {needexp%player%} to 10
