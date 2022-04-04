@@ -1,18 +1,19 @@
-command /status:
- trigger:
-  set {hp%player%} to {level%player%}*10+{vit%player%}*5
-  set {str%player%} to {level%player%}*2+{str%player%}
-  set {estr%player%} to {level%player%}*2+{elm%player%}
-  set {heal%player%} to {level%player%}*4+{mhy%player%}
-  set {speed%player%} to {level%player%}+{agi%player%}*0.3
-  set {critical%player%} to {level%player%}+{agi%player%}
-  set {mps%player%} to {level%player%}*2
 every seconds:
  loop all players:
-  set {hp%loop-player%} to {level%loop-player%}*10+{vit%loop-player%}*5
-  set {Strength%loop-player%} to {level%loop-player%}*2+{str%loop-player%}*1
+  set {hp%loop-player%} to 10+{level%loop-player%}*2+{vit%loop-player%}*2
+  set the maximum health of the loop-player to {hp%loop-player%}
+  set {strength%loop-player%} to {level%loop-player%}*0.5+{str%loop-player%}*1
   set {estr%loop-player%} to {level%loop-player%}*2+{elm%loop-player%}
   set {heal%loop-player%} to {level%loop-player%}*4+{mhy%loop-player%}
   set {speed%loop-player%} to {level%loop-player%}+{agi%loop-player%}*0.3
   set {critical%loop-player%} to {level%loop-player%}+{agi%loop-player%}
   set {mps%loop-player%} to {level%loop-player%}*2
+every second:
+ loop all players:
+  wait 3 second
+  add {level%loop-player%}*3 to loop-player's level
+  if loop-player's level is more than 1000:
+   set the loop-player's level to 1000
+on xp spawn:
+ world is "minigame_world"
+ cancel event

@@ -2,6 +2,7 @@ on damage of a player:
  set {_d} to {def%victim%}*-1
  increase the damage by {_d}
  send "%&4{def%victim%}% deffensd" to victim
+ send "受けただまげ &4%final damage%" to victim
 on damage:
  attacker is player
  increase the damage by {strength%attacker}
