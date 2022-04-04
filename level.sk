@@ -23,8 +23,8 @@ on first join:
  set {needexp%player%} to 10
  set {hp%player%} to 1
  set {str%player%} to 1
- set {estr%player%} to 1
  set {heal%player%} to 1
+ set {int%player%} to 1
  set {agi%player%} to 1
  set {mps%player%} to 1
  set {sute-tasu%player%} to 0
@@ -32,12 +32,10 @@ command /level:
  trigger:
   set {level%player%} to 1
   set {needexp%player%} to 10
-  set {hp%player%} to 20
-  set {vit%player%} to 1
+  set {hp%player%} to 1
   set {str%player%} to 1
+  set {heal%player%} to 1
   set {int%player%} to 1
-  set {def%player%} to 1
-  set {mhy%player%} to 1
   set {agi%player%} to 1
   set {mps%player%} to 1
   set {sute-tasu%player%} to 0
