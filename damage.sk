@@ -5,6 +5,6 @@ on damage of a player:
  send "受けただまげ &4%final damage%" to victim
 on damage:
  attacker is player
- increase the damage by {strength%attacker}
+ increase the damage by {strength%attacker%}
  send "$1だまげぼーなす%{strength%attacker}%" to attacker
  send "Hit for &4%final damage%" to attacker
