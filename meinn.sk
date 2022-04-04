@@ -54,44 +54,43 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
  if event-item is barrier:
   close player's inventory
 on inventory click:
- name of event-inventory is "スキルリスト"
- cancel event
- if event-item is barrier:
-  close player's inventory
-on inventory click:
  name of event-inventory is "ステ振り"
  cancel event
  if event-item is apple:
   {sute-tasu%player%} is not 0
   add 1 to {vit%player%}
   add -1 to {sute-tasu%player%}
+  set slot 0 of player's current inventory to apple named "VIT %{vit%player%}%" with lore "最大HP%{hp%player%}%"
  if event-item is anvil:
   {sute-tasu%player%} is not 0
   add 1 to {str%player%}
   add -1 to {sute-tasu%player%}
+  set slot 1 of player's current inventory to anvil named "STR %{str%player%}%" with lore "物理ダメージボーナス%{strength%player%}%"
  if event-item is blaze powder:
   {sute-tasu%player%} is not 0
   add 1 to {elm%player%}
   add -1 to {sute-tasu%player%}
+  set slot 2 of player's current inventory to blaze powder named "ELM %{elm%player%}%" with lore "属性ダメージボーナスxxxx"
  if event-item is iron Chestplate:
   {sute-tasu%player%} is not 0
   add 1 to {def%player%}
   add -1 to {sute-tasu%player%}
+  set slot 3 of player's current inventory to iron Chestplate named "DEF %{def%player%}%" with lore "物理防御 %{def%player%}%/1000" and "属性防御 %{def%player%}%/2000+%{elm%player%}%/2000"
  if event-item is emerald:
   {sute-tasu%player%} is not 0
   add 1 to {def%player%}
   add -1 to {sute-tasu%player%}
+  set slot 4 of player's current inventory to emerald named "MHY %{mhy%player%}%" with lore "回復力xxxx"
  if event-item is feather:
   {sute-tasu%player%} is not 0
   add 1 to {agi%player%}
   add -1 to {sute-tasu%player%}
+  set slot 5 of player's current inventory to feather named "AGI %{agi%player%}%" with lore "speed xxxx" and "criticalchance x" and "criticaldamage xx"
  if event-item is barrier:
   close player's inventory
-on inventory click:
- name of event-inventory is "armer"
- if event-item is barrier:
-  close player's inventory
- if event-item is white glass pane:
+ if event-item is not barrier or white glass pane:
+  {sute-tasu%player%} is more than 0
+  play sound "entity.experience_orb.pickup" with volume 0.7 to the player
   cancel event
 on inventory close:#アーマー保管
  name of event-inventory is "armer"

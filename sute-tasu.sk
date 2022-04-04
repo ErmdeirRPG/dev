@@ -11,7 +11,7 @@ every seconds:
 every second:
  loop all players:
   wait 3 second
-  add {level%loop-player%}*3 to loop-player's level
+  add {mps%loop-player%}*3 to loop-player's level
   if loop-player's level is more than 1000:
    set the loop-player's level to 1000
 on xp spawn:

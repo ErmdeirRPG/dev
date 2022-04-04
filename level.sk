@@ -23,7 +23,7 @@ command /level:
   set {hp%player%} to 20
   set {vit%player%} to 1
   set {str%player%} to 1
-  set {elm%player%} to 1
+  set {int%player%} to 1
   set {def%player%} to 1
   set {mhy%player%} to 1
   set {agi%player%} to 1
