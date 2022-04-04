@@ -34,7 +34,7 @@ on inventory click:#メインメニューｃｌｉｃｋ時イベント
   set slot 1 of player's current inventory to anvil named "STR %{str%player%}%" with lore "だまげぼーなす%{strength%player%}%"
   set slot 2 of player's current inventory to blaze powder named "INT %{int%player%}%" with lore "これが高いやつ賢い"
   set slot 3 of player's current inventory to iron Chestplate named "DEF %{def%player%}%" with lore "物理防御 %{def%player%}%" and "属性防御 なくなりました"
-  set slot 4 of player's current inventory to feather named "AGI %{agi%player%}%" with lore "speed xxxx" and "criticalchance x" and "criticaldamage xx"
+  set slot 4 of player's current inventory to feather named "AGI %{agi%player%}%" with lore "speed xxxx"
   set slot 8 of player's current inventory to barrier named "close"
  if event-item is iron Chestplate:
   open chest inventory with 6 row named "armer" to player
