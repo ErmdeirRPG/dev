@@ -37,7 +37,7 @@ on death:
   keikenti(attacker,5)
  if victim is creeper:
   keikenti(attacker,100)
-function tyouka(p:player):
+function tyouka(p:player,):
  if {needexp%{_p}%} < 1:
   add 1 to {level%{_p}%}
   add 5 to {sute-tasu%{_p}%}
